@@ -1,0 +1,59 @@
+
+<!--<head>-->
+<!--  <meta charset="UTF-8"/>-->
+<!--  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>-->
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>-->
+<!--  {% load static %}-->
+<!--  <link rel="stylesheet" href="{%static '/css/style.css'%}"/>-->
+<!--  <title>Document</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--  <div class="popup popup6">-->
+<!--    <div class="container">-->
+<!--      <div class="popup-body popup-body6">-->
+<!--        <h1 class="popup-body__title">Nhận quà</h1>-->
+<!--        <button class="popup-body__exit"><img src="{%static '/assets/images/closse-popup.png' %}"/></button>-->
+<!--        <ul>-->
+<!--          <li class="popup-body__name">Phi Đội 1<img class="popup-body6__img" src="{%static '/assets/images/item2.png'%}"/>-->
+<!--            <p class="popup-body__name popup-body6__name">Chúc mừng bạn đã nhận được phần quà vòng quay Phi Đội 17.</p>-->
+<!--          </li>-->
+<!--          <li class="popup-body__name">Phi Đội 2<img class="popup-body6__img" src="{%static '/assets/images/item2.png'%}"/>-->
+<!--            <p class="popup-body__name popup-body6__name">Chúc mừng bạn đã nhận được phần quà vòng quay Phi Đội 17.</p>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</body>-->
+<!--<script src="{%static '/js/bootstrap.min.js'%}"></script>-->
+<!--<script src="{%static '/js/index.js'%}"></script>-->
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}"> <!-- Sửa thành đây -->
+  <title>Document</title>
+</head>
+<body>
+  <div class="popup popup6">
+    <div class="container">
+      <div class="popup-body popup-body6">
+        <h1 class="popup-body__title">Nhận quà</h1>
+        <button class="popup-body__exit"><img src="{% static 'assets/images/closse-popup.png' %}"></button> <!-- Sửa thành đây -->
+        <ul>
+          <li class="popup-body__name">Phi Đội 1<img class="popup-body6__img" src="{% static 'assets/images/item2.png' %}">
+            <p class="popup-body__name popup-body6__name">Chúc mừng bạn đã nhận được phần quà vòng quay Phi Đội 17.</p>
+          </li>
+          <li class="popup-body__name">Phi Đội 2<img class="popup-body6__img" src="{% static 'assets/images/item2.png' %}">
+            <p class="popup-body__name popup-body6__name">Chúc mừng bạn đã nhận được phần quà vòng quay Phi Đội 17.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="{% static 'js/bootstrap.min.js' %}"></script> <!-- Sửa thành đây -->
+<script src="{% static 'js/index.js' %}"></script> <!-- Sửa thành đây -->
+</html>
