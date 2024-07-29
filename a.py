@@ -1,0 +1,1 @@
+print('mai trung nghĩa')
